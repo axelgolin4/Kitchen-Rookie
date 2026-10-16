@@ -132,15 +132,15 @@ src/
 - **Defensive data handling**: the API returns `null` when nothing is found and even a string (`"Invalid ID"`) for malformed IDs, so the code checks the shape of the data before using it.
 - **Design tokens** in Tailwind 4 with `@theme`, plus modern CSS like `clamp()`, `:has()` and `prefers-reduced-motion`.
 
-## Roadmap
+<p align="center">
+  <a href="https://kitchen-rookie.vercel.app/"><b>Live demo →</b></a>
+</p>
 
-- [ ] Deploy to Vercel
-- [ ] Tests with Vitest and Testing Library
-- [ ] Continuous integration with GitHub Actions (lint, tests and build on every push)
-- [ ] "What's in your fridge?": find recipes by ingredient
 
 ## Credits
 
 - Recipe data and images from [TheMealDB](https://www.themealdb.com/).
 - Icons from [Lucide](https://lucide.dev/).
 - Fonts: [Playfair Display](https://fonts.google.com/specimen/Playfair+Display) and [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans) from Google Fonts.
+
+
