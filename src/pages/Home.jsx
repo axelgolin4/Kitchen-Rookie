@@ -4,7 +4,7 @@ import Hero from "../components/Hero";
 import RecipeCard from "../components/RecipeCard";
 import RecipeCardSkeleton from "../components/RecipeCardSkeleton";
 import SearchBar from "../components/SearchBar";
-import { useLanguage } from "../context/LanguageContext";
+import useLanguage from "../hooks/useLanguage";
 import useFetch from "../hooks/useFetch";
 
 const API = "https://www.themealdb.com/api/json/v1/1";

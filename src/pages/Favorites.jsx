@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import RecipeCard from "../components/RecipeCard";
-import { useFavorites } from "../context/FavoritesContext";
-import { useLanguage } from "../context/LanguageContext";
+import useFavorites from "../hooks/useFavorites";
+import useLanguage from "../hooks/useLanguage";
 
 function Favorites() {
   const { favorites } = useFavorites();

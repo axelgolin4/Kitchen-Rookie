@@ -1,6 +1,6 @@
 import { Search } from "lucide-react";
 import { useState } from "react";
-import { useLanguage } from "../context/LanguageContext";
+import useLanguage from "../hooks/useLanguage";
 
 function SearchBar({ initialValue = "", onSearch }) {
   const [text, setText] = useState(initialValue);

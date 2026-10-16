@@ -1,7 +1,7 @@
-import { ArrowRight, Bookmark, Globe, Sparkles, Utensils } from "lucide-react";
+import { ArrowRight, Bookmark, Globe, Utensils } from "lucide-react";
 import { Link } from "react-router";
-import { useFavorites } from "../context/FavoritesContext";
-import { useLanguage } from "../context/LanguageContext";
+import useFavorites from "../hooks/useFavorites";
+import useLanguage from "../hooks/useLanguage";
 import useFetch from "../hooks/useFetch";
 import { getIngredients } from "../utils/recipe";
 

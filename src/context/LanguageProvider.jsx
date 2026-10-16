@@ -1,8 +1,7 @@
-import { createContext, useContext, useEffect } from "react";
+import { useEffect } from "react";
 import useLocalStorage from "../hooks/useLocalStorage";
 import translations from "../i18n/translations";
-
-const LanguageContext = createContext(null);
+import { LanguageContext } from "./LanguageContext";
 
 export function LanguageProvider({ children }) {
   const [lang, setLang] = useLocalStorage("lang", "es");
@@ -29,12 +28,4 @@ export function LanguageProvider({ children }) {
       {children}
     </LanguageContext.Provider>
   );
-}
-
-export function useLanguage() {
-  const context = useContext(LanguageContext);
-  if (!context) {
-    throw new Error("useLanguage debe usarse dentro de <LanguageProvider>");
-  }
-  return context;
 }

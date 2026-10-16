@@ -1,7 +1,7 @@
 import { ArrowLeft } from "lucide-react";
 import { useNavigate, useParams } from "react-router";
 import FavoriteButton from "../components/FavoriteButton";
-import { useLanguage } from "../context/LanguageContext";
+import useLanguage from "../hooks/useLanguage";
 import useFetch from "../hooks/useFetch";
 import { getIngredients } from "../utils/recipe";
 import NotFound from "./NotFound";

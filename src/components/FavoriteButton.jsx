@@ -1,6 +1,6 @@
 import { Bookmark } from "lucide-react";
-import { useFavorites } from "../context/FavoritesContext";
-import { useLanguage } from "../context/LanguageContext";
+import useFavorites from "../hooks/useFavorites";
+import useLanguage from "../hooks/useLanguage";
 
 function FavoriteButton({ recipe, className = "" }) {
   const { isFavorite, toggleFavorite } = useFavorites();

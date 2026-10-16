@@ -1,7 +1,5 @@
-import { createContext, useContext } from "react";
+import { FavoritesContext } from "./FavoritesContext";
 import useLocalStorage from "../hooks/useLocalStorage";
-
-const FavoritesContext = createContext(null);
 
 export function FavoritesProvider({ children }) {
   const [favorites, setFavorites] = useLocalStorage("favorites", []);
@@ -30,12 +28,4 @@ export function FavoritesProvider({ children }) {
       {children}
     </FavoritesContext.Provider>
   );
-}
-
-export function useFavorites() {
-  const context = useContext(FavoritesContext);
-  if (!context) {
-    throw new Error("useFavorites debe usarse dentro de <FavoritesProvider>");
-  }
-  return context;
 }

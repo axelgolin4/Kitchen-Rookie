@@ -1,7 +1,7 @@
 import { Bookmark, Compass, LayoutGrid } from "lucide-react";
 import { Link, NavLink, Route, Routes } from "react-router";
-import { useFavorites } from "./context/FavoritesContext";
-import { useLanguage } from "./context/LanguageContext";
+import useFavorites from "./hooks/useFavorites";
+import useLanguage from "./hooks/useLanguage";
 import Categories from "./pages/Categories";
 import Favorites from "./pages/Favorites";
 import Home from "./pages/Home";
